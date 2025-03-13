@@ -1,0 +1,226 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background: #28a745;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background 0.3s ease;
+    border-radius: 20px; 
+}
+
+nav ul li a:hover, .active {
+    background: white;
+    color: #28a745;
+    border-radius: 20px;
+}
+
+.welcome {
+    text-align: center;
+    padding: 50px;
+    background: white;
+}
+
+.welcome h2 {
+    color: #28a745;
+}
+
+.highlight {
+    color: #ff9800; 
+    font-weight: bold;
+}
+
+.responsive-img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.features {
+    text-align: center;
+    padding: 50px;
+    background: #eafaea;
+}
+
+.features h2 {
+    color: #28a745;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+    font-size: 40px;
+    color: #ff9800;
+}
+.roles {
+    text-align: center;
+    padding: 50px;
+}
+
+.role-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.role {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.role h3 {
+    color: #28a745;
+}
+
+.role p {
+    color: #555;
+}
+.btn {
+    display: inline-block;
+    background: #ff9800;  
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;  
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e68900;  
+}
+
+
+marquee {
+    font-weight: bold;
+}
+.testimonials {
+    padding: 50px;
+    background: white;
+    text-align: center;
+}
+
+.testimonial {
+    background: #eafaea;
+    padding: 20px;
+    border-radius: 15px;
+    width: 60%;
+    margin: 10px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.how-it-works {
+    text-align: center;
+    padding: 50px;
+    background: #eafaea;
+}
+
+.how-it-works h2 {
+    color: #28a745;
+}
+
+.how-it-works ol {
+    list-style: none;
+    padding: 0;
+}
+
+.how-it-works ol li {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq {
+    padding: 50px;
+    text-align: center;
+    background: white;
+}
+
+.faq h2 {
+    color: #28a745;
+}
+
+.faq-item {
+    background: #eafaea;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 60%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.get-started-container {
+    text-align: center;
+    padding: 40px;
+    background: #eafaea;
+}
+
+.get-started-container .btn {
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+footer {
+    background: #28a745;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}

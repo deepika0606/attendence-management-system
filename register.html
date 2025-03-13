@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Attendance Management System</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<header>
+    <h1>Attendance Management System</h1>
+    <a href="logout.html">
+        <img src="logout.png" alt="Logout" class="logo">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="student.html">student</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Register</h2>
+    <form action="register.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+</div>
+
+<footer>
+    <p>&copy; 2025 Attendance Management System. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

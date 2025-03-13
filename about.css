@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(to right, #4CAF50, #2E8B57);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.about-container {
+    max-width: 80%;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.about-container .highlight {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.about-container p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.about-container ul {
+    margin-left: 20px;
+}
+
+.about-container ul li {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.about-container ul li i {
+    color: #4CAF50;
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+footer {
+    background: linear-gradient(to right, #4CAF50, #2E8B57);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    .about-container h1 {
+        font-size: 2rem;
+    }
+
+    .about-container p {
+        font-size: 1rem;
+    }
+}

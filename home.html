@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="logout.html">
+            <img src="logout.png" alt="Logout" class="logo">
+        </a>
+        <h1><span id="typing-text"></span></h1>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="student.html">Student</a></li>
+                <li><a href="teacher.html">Teacher</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to the <span class="highlight">Attendance Management System</span></h2>
+            <p>Track and manage attendance effortlessly with our user-friendly platform.</p>
+            <img src="image.png" class="responsive-img" alt="Attendance System">
+        </section>
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="feature-list">
+                <div class="feature">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Automated Attendance</h3>
+                    <p>Mark attendance quickly and efficiently with just a few clicks.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Attendance Reports</h3>
+                    <p>View and analyze attendance records in real-time.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Data</h3>
+                    <p>All student and teacher records are securely stored in our database.</p>
+                </div>
+            </div>
+        </section>
+        <section class="roles">
+            <h2>User Roles</h2>
+            <div class="role-container">
+                <div class="role">
+                    <h3>Student</h3>
+                    <p>Students can view their attendance records and receive updates.</p>
+                    <a href="student.html" class="btn">Student Portal</a>
+                </div>
+                <div class="role">
+                    <h3>Teacher</h3>
+                    <p>Teachers can mark attendance, view reports, and manage student records.</p>
+                    <a href="teacher.html" class="btn">Teacher Dashboard</a>
+                </div>
+                <div class="role">
+                    <h3>Admin</h3>
+                    <p>Admins have full control over attendance records and user management.</p>
+                    <a href="admin.html" class="btn">Admin Panel</a>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial">
+                <p>"This system has made attendance tracking so easy for us! Highly recommended." - <strong>Mr. Sharma, Teacher</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"I can check my attendance anytime now. Love the convenience!" - <strong>Ravi, Student</strong></p>
+            </div>
+        </section>
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <ol>
+                <li>Teachers log in and mark attendance.</li>
+                <li>Attendance data is stored securely in the system.</li>
+                <li>Students and teachers can view reports anytime.</li>
+            </ol>
+        </section>
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>📌 How do I mark attendance?</h3>
+                <p>Teachers can log in and use the dashboard to mark student attendance.</p>
+            </div>
+            <div class="faq-item">
+                <h3>📌 Can students see their attendance records?</h3>
+                <p>Yes! Students can log in to the Student Portal and check their records.</p>
+            </div>
+            <div class="faq-item">
+                <h3>📌 Is my data safe?</h3>
+                <p>Yes, our system uses secure encryption and database management to protect user data.</p>
+            </div>
+        </section>
+        <div class="get-started-container">
+            <a href="login.html" class="btn">Get Started</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Attendance Management System. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const text = "Attendance Management System";
+            let index = 0;
+            const typingText = document.getElementById("typing-text");
+
+            function type() {
+                if (index < text.length) {
+                    typingText.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, 100);
+                } else {
+                    typingText.innerHTML += '<span class="cursor">|</span>';
+                }
+            }
+
+            type();
+        });
+    </script>
+</body>
+</html>

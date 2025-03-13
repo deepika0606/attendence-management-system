@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Attendance Management System</title>
+    <link rel="stylesheet" href="student.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Student Dashboard</h1>
+        <a href="logout.html">
+            <img src="logout.png" alt="Logout" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="view_attendance.php"><i class="fas fa-calendar-check"></i> View Attendance</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="student-container">
+            <h2>Welcome, Student!</h2>
+            <p>Here you can view your attendance records and track your progress.</p>
+            
+            <h3>Your Attendance Summary</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Subject</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025-02-16</td>
+                        <td>Mathematics</td>
+                        <td class="present">Present</td>
+                    </tr>
+                    <tr>
+                        <td>2025-02-15</td>
+                        <td>Science</td>
+                        <td class="absent">Absent</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Attendance Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

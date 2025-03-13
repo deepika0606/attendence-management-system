@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - Attendance Management System</title>
+    <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+    <header>
+        <h1>Teacher Dashboard</h1>
+        <a href="logout.html">
+            <img src="logout.png" alt="Logout" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="teacher.html">Mark Attendance</a></li>
+                <li><a href="view_attendance.php">View Attendance</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="teacher-container">
+            <h2>Welcome, Teacher!</h2>
+            <p>Manage student attendance efficiently with our system.</p>
+
+            <h3>Mark Attendance</h3>
+            <form action="mark_attendance.php" method="POST">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Roll No</th>
+                            <th>Name</th>
+                            <th>Branch</th>
+                            <th>Present</th>
+                            <th>Absent</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>Anshika</td>
+                            <td>Computer Science</td>
+                            <td><input type="radio" name="attendance[101]" value="Present"></td>
+                            <td><input type="radio" name="attendance[101]" value="Absent"></td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Vaishnavi</td>
+                            <td>Electronics and Communication</td>
+                            <td><input type="radio" name="attendance[102]" value="Present"></td>
+                            <td><input type="radio" name="attendance[102]" value="Absent"></td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>Avantika</td>
+                            <td>Information Technology</td>
+                            <td><input type="radio" name="attendance[103]" value="Present"></td>
+                            <td><input type="radio" name="attendance[103]" value="Absent"></td>
+                        </tr>
+                        <tr>
+                            <td>104</td>
+                            <td>Pryanshi</td>
+                            <td>VLSI</td>
+                            <td><input type="radio" name="attendance[104]" value="Present"></td>
+                            <td><input type="radio" name="attendance[104]" value="Absent"></td>
+                        </tr>
+                        <tr>
+                            <td>105</td>
+                            <td>Janvi</td>
+                            <td>Electrical and Electronics</td>
+                            <td><input type="radio" name="attendance[105]" value="Present"></td>
+                            <td><input type="radio" name="attendance[105]" value="Absent"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button type="submit" class="btn">Submit Attendance</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Attendance Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
